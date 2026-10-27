@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Apri Cancello — Privacy Policy</title>
+<!--
+  ============================================================================
+  Apri Cancello - Privacy Policy e avvertenze d'uso (IT / EN)
+  Pagina statica autonoma (CSS e JavaScript inline, nessuna dipendenza esterna),
+  pubblicabile su GitHub Pages o su qualunque hosting. Un solo URL per Google Play.
+  Modello: alert4pills-privacy (stesso stile). Vedi README.md nella stessa cartella.
+  I dati del titolare sono nell'oggetto CONTROLLER; la data in EFFECTIVE; il numero
+  di versione in VERSION.
+  ============================================================================
+-->
+<style>
+  :root{
+    --bg:#ffffff; --fg:#1c1f24; --muted:#5b636e; --card:#f6f7f9;
+    --border:#e3e6ea; --accent:#b45309; --accent-fg:#ffffff; --link:#9a3f00;
+    --maxw:760px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#14171a; --fg:#e7eaee; --muted:#a2abb5; --card:#1d2126;
+      --border:#2b3138; --accent:#f59e0b; --accent-fg:#14171a; --link:#fbbf24;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#ffffff; --fg:#1c1f24; --muted:#5b636e; --card:#f6f7f9;
+    --border:#e3e6ea; --accent:#b45309; --accent-fg:#ffffff; --link:#9a3f00;
+  }
+  :root[data-theme="dark"]{
+    --bg:#14171a; --fg:#e7eaee; --muted:#a2abb5; --card:#1d2126;
+    --border:#2b3138; --accent:#f59e0b; --accent-fg:#14171a; --link:#fbbf24;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--fg);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; font-size:17px;
+    -webkit-text-size-adjust:100%; text-size-adjust:100%;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:24px 20px 72px}
+  header.top{
+    display:flex; flex-wrap:wrap; gap:14px; align-items:center;
+    justify-content:space-between; margin-bottom:8px;
+  }
+  .brand{display:flex; align-items:center; gap:12px; font-weight:700; font-size:1.15rem}
+  .brand .logo{
+    width:34px;height:34px;border-radius:9px;background:var(--accent);
+    color:var(--accent-fg);display:grid;place-items:center;font-size:20px;flex:0 0 auto;
+  }
+  nav.langs{display:flex; gap:6px; flex-wrap:wrap}
+  nav.langs button{
+    font:inherit; font-size:.82rem; font-weight:600; letter-spacing:.02em;
+    padding:6px 11px; border-radius:999px; cursor:pointer;
+    border:1px solid var(--border); background:var(--card); color:var(--muted);
+    transition:all .15s ease;
+  }
+  nav.langs button:hover{color:var(--fg)}
+  nav.langs button[aria-pressed="true"]{
+    background:var(--accent); color:var(--accent-fg); border-color:var(--accent);
+  }
+  h1{font-size:1.7rem; line-height:1.25; margin:.4em 0 .1em}
+  .meta{color:var(--muted); font-size:.9rem; margin-bottom:22px}
+  h2{font-size:1.18rem; margin:1.9em 0 .5em; padding-top:.2em}
+  h2 .num{color:var(--accent); font-variant-numeric:tabular-nums; margin-right:.4em}
+  p{margin:.55em 0}
+  ul{margin:.5em 0 .8em; padding-left:1.25em}
+  li{margin:.3em 0}
+  a{color:var(--link)}
+  strong{font-weight:650}
+  .callout{
+    background:var(--card); border:1px solid var(--border); border-left:4px solid var(--accent);
+    border-radius:10px; padding:14px 16px; margin:16px 0;
+  }
+  .callout p{margin:.3em 0}
+  .contact{
+    background:var(--card); border:1px solid var(--border); border-radius:10px;
+    padding:16px 18px; margin:14px 0;
+  }
+  .contact .row{display:flex; gap:8px; margin:.25em 0; flex-wrap:wrap}
+  .contact .k{color:var(--muted); min-width:150px; font-size:.9rem}
+  footer.foot{
+    margin-top:40px; padding-top:18px; border-top:1px solid var(--border);
+    color:var(--muted); font-size:.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><span class="logo">&#128679;</span> Apri Cancello</div>
+    <nav class="langs" aria-label="Language">
+      <button type="button" data-lang="it" aria-pressed="true">Italiano</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </nav>
+  </header>
+
+  <main id="content"><!-- generato dallo script --></main>
+
+  <footer class="foot" id="foot"></footer>
+</div>
+
+<script>
+/* ---------------------------------------------------------------------------
+   Titolare del trattamento (Data Controller). Per aggiornare i contatti basta
+   modificare questo oggetto: email e sito diventano link cliccabili.
+--------------------------------------------------------------------------- */
+var CONTROLLER = {
+  company: "IN THE NET di Gasperoni Robert",
+  address: "Strada di Paderna, 2 - Repubblica di San Marino",
+  vat:     "SM05524",
+  email:   "robert@inthenet.sm",
+  web:     "https://www.inthenet.sm"
+};
+
+var EFFECTIVE = { it:"27 ottobre 2026", en:"27 October 2026" };
+var VERSION = "1.0";
+
+var T = {
+  it: {
+    docTitle: "Privacy Policy e avvertenze d'uso",
+    updated: "Ultimo aggiornamento",
+    version: "Versione",
+    intro:
+      "Questa pagina descrive come l'applicazione <strong>Apri Cancello</strong> (\"l'App\") tratta i dati inseriti dall'utente e quali avvertenze valgono per il suo uso. " +
+      "Apri Cancello permette di aprire un cancello, una sbarra o un portone con un tocco: l'App <strong>telefona al numero del dispositivo di apertura</strong> scelto dall'utente e riaggancia dopo il tempo impostato. " +
+      "Il principio guida è semplice: <strong>i tuoi dati restano sul tuo telefono</strong>.",
+    s1t: "Dati trattati",
+    s1:
+      "L'App conserva solo dati che sei tu a inserire, per uso personale:" +
+      "<ul>" +
+      "<li>l'elenco dei <strong>cancelli</strong> (fino a 6): nome, <strong>numero di telefono del dispositivo di apertura</strong>, SIM da usare, tempo di riaggancio e tempo di attesa;</li>" +
+      "<li>il <strong>cancello predefinito</strong>, se ne hai scelto uno;</li>" +
+      "<li>il <strong>registro delle aperture</strong>: data e ora del tentativo, numero chiamato, nome del cancello, SIM usata ed esito.</li>" +
+      "</ul>" +
+      "L'App <strong>non richiede e non registra dati anagrafici</strong> (nome, cognome, data di nascita, codice fiscale, indirizzo). Non raccoglie identificatori del dispositivo, posizione, contatti, foto, messaggi, registro delle chiamate del telefono né dati pubblicitari.",
+    s2t: "Dove sono conservati i dati e assenza di raccolta",
+    s2:
+      "Tutti i dati sono salvati <strong>unicamente in locale</strong>, nell'area di archiviazione privata dell'App sul tuo telefono (database SQLite). " +
+      "Il backup automatico di Android è <strong>disattivato</strong> per l'App, quindi i dati non vengono copiati nemmeno nel tuo account Google. " +
+      "L'App <strong>non invia dati a nessun server</strong> né li condivide con lo sviluppatore.",
+    s2callout:
+      "In termini di Google Play Data Safety: l'App <strong>non raccoglie</strong> e <strong>non condivide</strong> alcun dato dell'utente, perché nessun dato lascia il telefono.",
+    s3t: "Nessuna condivisione con terzi",
+    s3:
+      "L'App non contiene servizi di analisi o di tracciamento, né pubblicità, né SDK di terze parti che inviano dati in rete.",
+    s3b:
+      "L'App dichiara nel manifest anche il permesso Android <em>INTERNET</em>, perché lo richiedono i componenti di base del framework con cui è costruita. <strong>L'App non lo usa per inviare o ricevere dati.</strong> " +
+      "L'animazione della sbarra sulla schermata principale è disegnata da un visualizzatore web del sistema che mostra soltanto contenuto interno all'App, senza aprire alcun indirizzo Internet.",
+    s4t: "Autorizzazioni richieste e loro finalità",
+    s4:
+      "L'App richiede solo le autorizzazioni necessarie a fare la telefonata di apertura:" +
+      "<ul>" +
+      "<li><strong>Telefono - effettuare chiamate</strong>: comporre il numero del cancello quando tocchi il suo pulsante (o, per il cancello predefinito, dopo il conto alla rovescia di 3 secondi, che puoi fermare con <em>Annulla</em>);</li>" +
+      "<li><strong>Telefono - stato del telefono</strong>: sapere quali SIM sono disponibili e quando la chiamata è avviata, collegata o terminata;</li>" +
+      "<li><strong>Telefono - rispondere alle chiamate / terminare la chiamata</strong>: riagganciare dopo il tempo impostato.</li>" +
+      "</ul>" +
+      "L'App non legge né modifica la rubrica, il registro chiamate o i messaggi del telefono, e non usa il microfono.",
+    s5t: "Avvertenze d'uso",
+    s5:
+      "<ul>" +
+      "<li>La chiamata è una <strong>normale telefonata</strong>: la effettua il telefono tramite la SIM scelta e può avere un <strong>costo</strong> secondo il tuo piano telefonico. Non dipende dall'App né dallo sviluppatore.</li>" +
+      "<li>Sei tu a inserire i numeri: <strong>controlla che siano corretti</strong>, perché l'App chiama esattamente quello che hai impostato.</li>" +
+      "<li>L'apertura automatica del cancello predefinito parte soltanto quando l'App si avvia da zero e, se la configuri, dopo un conto alla rovescia che puoi annullare. Dopo un'apertura dai il tempo al cancello di muoversi e <strong>controlla che l'area sia libera</strong>.</li>" +
+      "<li>L'App è uno strumento di comodo e <strong>non è un dispositivo di sicurezza</strong>: l'apertura effettiva dipende dal dispositivo del cancello, dalla rete telefonica e dal telefono. Non fare affidamento su di essa per situazioni in cui un'apertura mancata o inattesa possa causare danni a persone o cose.</li>" +
+      "</ul>",
+    s6t: "Conservazione e cancellazione dei dati",
+    s6:
+      "I dati restano sul telefono finché non li elimini dall'App (puoi cancellare i singoli cancelli) o finché <strong>disinstalli l'App</strong>: la disinstallazione rimuove il database locale e con esso tutti i dati, registro compreso. " +
+      "Non esistono copie sui nostri sistemi, perché non ne riceviamo alcuna.",
+    s7t: "Minori",
+    s7:
+      "L'App non è rivolta ai minori e non raccoglie consapevolmente dati da essi. Non essendoci raccolta di dati, non viene effettuata alcuna profilazione.",
+    s8t: "Diritti dell'utente",
+    s8:
+      "Poiché i dati sono conservati solo in locale e sotto il tuo diretto controllo, puoi <strong>consultarli, modificarli ed eliminarli in qualsiasi momento</strong> dall'App. " +
+      "Ove applicabile la normativa europea (GDPR) o equivalente, i diritti di accesso, rettifica e cancellazione si esercitano quindi in autonomia; per qualsiasi domanda puoi contattare il titolare indicato di seguito.",
+    s9t: "Titolare e contatti",
+    s9: "Il titolare responsabile della presente App è:",
+    s10t: "Modifiche a questo documento",
+    s10:
+      "Questo documento può essere aggiornato in caso di modifiche all'App. La versione aggiornata sarà pubblicata a questo stesso indirizzo, con l'indicazione della data di ultimo aggiornamento. " +
+      "Se in futuro l'App usasse la rete o raccogliesse dati, questa pagina verrà aggiornata prima del rilascio di quella versione.",
+    footer: "Il presente documento riguarda l'applicazione Apri Cancello. Nessun dato personale viene raccolto o trasmesso dall'App."
+  },
+
+  en: {
+    docTitle: "Privacy Policy and usage notes",
+    updated: "Last updated",
+    version: "Version",
+    intro:
+      "This page explains how the <strong>Apri Cancello</strong> application (\"the App\") handles the data you enter, and which usage notes apply. " +
+      "Apri Cancello opens a gate, a barrier or a garage door with one tap: the App <strong>calls the phone number of the opening device</strong> you choose and hangs up after the time you set. " +
+      "The guiding principle is simple: <strong>your data stays on your phone</strong>.",
+    s1t: "Data we handle",
+    s1:
+      "The App only keeps data that you enter yourself, for personal use:" +
+      "<ul>" +
+      "<li>your list of <strong>gates</strong> (up to 6): name, <strong>phone number of the opening device</strong>, the SIM to use, hang-up time and wait time;</li>" +
+      "<li>the <strong>default gate</strong>, if you chose one;</li>" +
+      "<li>the <strong>opening log</strong>: date and time of the attempt, number called, gate name, SIM used and outcome.</li>" +
+      "</ul>" +
+      "The App <strong>does not ask for or store identifying personal details</strong> (name, surname, date of birth, national ID, address). It collects no device identifiers, location, contacts, photos, messages, phone call history or advertising data.",
+    s2t: "Where data is stored, and no collection",
+    s2:
+      "All data is saved <strong>only locally</strong>, in the App's private storage on your phone (an SQLite database). " +
+      "Android's automatic backup is <strong>turned off</strong> for the App, so the data is not even copied to your Google account. " +
+      "The App <strong>sends no data to any server</strong> and shares nothing with the developer.",
+    s2callout:
+      "In Google Play Data Safety terms: the App <strong>does not collect</strong> and <strong>does not share</strong> any user data, because no data leaves the phone.",
+    s3t: "No sharing with third parties",
+    s3:
+      "The App contains no analytics or tracking services, no advertising, and no third-party SDKs that send data over the network.",
+    s3b:
+      "The App's manifest also declares the Android <em>INTERNET</em> permission, because the core components of the framework it is built with require it. <strong>The App does not use it to send or receive data.</strong> " +
+      "The animated barrier on the main screen is drawn by a system web viewer that only shows content built into the App and never opens an Internet address.",
+    s4t: "Permissions requested and their purpose",
+    s4:
+      "The App only requests the permissions needed to place the opening call:" +
+      "<ul>" +
+      "<li><strong>Phone - make calls</strong>: to dial the gate's number when you tap its button (or, for the default gate, after the 3-second countdown, which you can stop with <em>Cancel</em>);</li>" +
+      "<li><strong>Phone - phone state</strong>: to know which SIMs are available and when the call is started, connected or ended;</li>" +
+      "<li><strong>Phone - answer / end calls</strong>: to hang up after the time you set.</li>" +
+      "</ul>" +
+      "The App does not read or change your contacts, call history or messages, and does not use the microphone.",
+    s5t: "Usage notes",
+    s5:
+      "<ul>" +
+      "<li>The call is an <strong>ordinary phone call</strong>: your phone places it through the SIM you chose and it may <strong>cost</strong> money under your phone plan. This does not depend on the App or the developer.</li>" +
+      "<li>You enter the numbers: <strong>check they are correct</strong>, because the App dials exactly what you set.</li>" +
+      "<li>The automatic opening of the default gate only starts when the App is launched from scratch and, if you set it up, after a countdown that you can cancel. After an opening give the gate time to move and <strong>make sure the area is clear</strong>.</li>" +
+      "<li>The App is a convenience tool and <strong>is not a safety device</strong>: whether the gate actually opens depends on the gate device, the phone network and your phone. Do not rely on it where a missed or unexpected opening could harm people or property.</li>" +
+      "</ul>",
+    s6t: "Data retention and deletion",
+    s6:
+      "Data stays on the phone until you delete it in the App (you can delete individual gates) or until you <strong>uninstall the App</strong>: uninstalling removes the local database and, with it, all the data, including the log. " +
+      "There are no copies on our systems, because we never receive any.",
+    s7t: "Children",
+    s7:
+      "The App is not directed at children and does not knowingly collect data from them. As no data is collected, no profiling is performed.",
+    s8t: "Your rights",
+    s8:
+      "Because data is stored only locally and under your direct control, you can <strong>view, edit and delete it at any time</strong> in the App. " +
+      "Where the EU GDPR or equivalent law applies, the rights of access, rectification and erasure are therefore exercised by you directly; for any question you may contact the controller below.",
+    s9t: "Controller and contact",
+    s9: "The controller responsible for this App is:",
+    s10t: "Changes to this document",
+    s10:
+      "This document may be updated when the App changes. The updated version will be published at this same address, showing the new last-updated date. " +
+      "If the App ever uses the network or collects data, this page will be updated before that version is released.",
+    footer: "This document concerns the Apri Cancello application. No personal data is collected or transmitted by the App."
+  }
+};
+
+var LABELS = {
+  it:{company:"Titolare",address:"Indirizzo",vat:"Identificativo fiscale",email:"Email",web:"Sito web"},
+  en:{company:"Controller",address:"Address",vat:"Tax ID",email:"Email",web:"Website"}
+};
+
+function esc(s){return String(s).replace(/[<>&]/g,function(c){return{'<':'&lt;','>':'&gt;','&':'&amp;'}[c];});}
+
+function render(lang){
+  var t = T[lang], lb = LABELS[lang];
+  var secs = [
+    ["1", t.s1t, t.s1],
+    ["2", t.s2t, t.s2 + '<div class="callout"><p>'+t.s2callout+'</p></div>'],
+    ["3", t.s3t, '<p>'+t.s3+'</p><p>'+t.s3b+'</p>'],
+    ["4", t.s4t, t.s4],
+    ["5", t.s5t, t.s5],
+    ["6", t.s6t, t.s6],
+    ["7", t.s7t, t.s7],
+    ["8", t.s8t, t.s8]
+  ];
+  var emailHtml = '<a href="mailto:'+esc(CONTROLLER.email)+'">'+esc(CONTROLLER.email)+'</a>';
+  var webRow = "";
+  if (CONTROLLER.web) {
+    webRow = '<div class="row"><span class="k">'+lb.web+'</span><span>' +
+             '<a href="'+esc(CONTROLLER.web)+'" target="_blank" rel="noopener">'+esc(CONTROLLER.web)+'</a></span></div>';
+  }
+  var contact =
+    '<div class="contact">' +
+      '<div class="row"><span class="k">'+lb.company+'</span><span>'+esc(CONTROLLER.company)+'</span></div>' +
+      '<div class="row"><span class="k">'+lb.address+'</span><span>'+esc(CONTROLLER.address)+'</span></div>' +
+      '<div class="row"><span class="k">'+lb.vat+'</span><span>'+esc(CONTROLLER.vat)+'</span></div>' +
+      '<div class="row"><span class="k">'+lb.email+'</span><span>'+emailHtml+'</span></div>' +
+      webRow +
+    '</div>';
+
+  var html = '<h1>'+esc(t.docTitle)+'</h1>' +
+    '<p class="meta">'+esc(t.updated)+': '+esc(EFFECTIVE[lang])+' &nbsp;&middot;&nbsp; '+esc(t.version)+' '+esc(VERSION)+'</p>' +
+    '<p>'+t.intro+'</p>';
+  secs.forEach(function(s){
+    html += '<h2><span class="num">'+s[0]+'.</span>'+esc(s[1])+'</h2>'+s[2];
+  });
+  html += '<h2><span class="num">9.</span>'+esc(t.s9t)+'</h2><p>'+t.s9+'</p>'+contact;
+  html += '<h2><span class="num">10.</span>'+esc(t.s10t)+'</h2><p>'+t.s10+'</p>';
+
+  document.getElementById('content').innerHTML = html;
+  document.getElementById('foot').innerHTML = esc(t.footer);
+  document.documentElement.setAttribute('lang', lang);
+  document.title = 'Apri Cancello — ' + t.docTitle;
+  var btns = document.querySelectorAll('nav.langs button');
+  for(var i=0;i<btns.length;i++){
+    btns[i].setAttribute('aria-pressed', btns[i].getAttribute('data-lang')===lang ? 'true':'false');
+  }
+  try{ localStorage.setItem('ac_lang', lang); }catch(e){}
+}
+
+(function init(){
+  var supported = {it:1,en:1};
+  var lang = null;
+  try{ var saved = localStorage.getItem('ac_lang'); if(saved && supported[saved]) lang = saved; }catch(e){}
+  if(!lang){
+    var nav = (navigator.language || navigator.userLanguage || 'it').slice(0,2).toLowerCase();
+    lang = supported[nav] ? nav : 'it';
+  }
+  var btns = document.querySelectorAll('nav.langs button');
+  for(var i=0;i<btns.length;i++){
+    btns[i].addEventListener('click', function(){ render(this.getAttribute('data-lang')); });
+  }
+  render(lang);
+})();
+</script>
+</body>
+</html>
